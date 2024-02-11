@@ -32,7 +32,7 @@ function inserttask(event){
 
      let i = localStorage.length;
      let a = document.getElementById("Enternotes").value;
-     localStorage.setItem(`task${i}`, `<div class = "task" id = "task${i}"><p>${a}<\p> <button class = "delete" onclick="taskdeletor(${i})" >delete</button></div>`)
+     localStorage.setItem(`task${i}`, `<div class = "task" id = "task${i}"><p>${a}<\p> <button class = "delete" onclick="taskdeletor(${i})" ><img src = "delete_icon.jpg" class = "image"></button></div>`)
      ref.insertAdjacentHTML("beforeend",`${localStorage.getItem(`task${i}`)}`)
 
  }
